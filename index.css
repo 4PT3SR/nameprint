@@ -1,0 +1,42 @@
+body {
+    background-color:black;
+    /* color: rgb(212, 209, 209); */
+    color: white;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+h1::after {
+    content: "";
+    border-right: 2px solid white;
+    height: 100px;
+    animation: blink 0.5s infinite ease;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+img[src='zuri.jfif'] {
+    position: absolute;
+    right: 5px;
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
